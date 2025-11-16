@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    background: #0f1624;
+    color: #e8eef9;
+}
+
+.app {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 260px;
+    background: #121a2c;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    background: #6ee7b7;
+    border: none;
+    color: #082617;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.btn-outline {
+    padding: 10px;
+    border: 1px solid #6ee7b7;
+    color: #6ee7b7;
+    background: transparent;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.section-title {
+    margin: 20px 0 10px;
+    font-size: 14px;
+    color: #9aa4b8;
+}
+
+.courses {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.course-card {
+    background: #182235;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.course-card:hover {
+    background: #1e2a44;
+}
+
+.stats {
+    margin-top: 10px;
+}
+
+.stat-card {
+    background: #182235;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.stat-card h4 {
+    font-size: 22px;
+}
+
+/* MAIN SECTION */
+.main {
+    flex: 1;
+    background: #121a2c;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+/* MODAL */
+.modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.7);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background: #121a2c;
+    padding: 20px;
+    border-radius: 10px;
+    width: 380px;
+}
+
+.modal-content label {
+    margin-top: 10px;
+    display: block;
+    font-size: 14px;
+}
+
+.modal-content input,
+.modal-content textarea {
+    width: 100%;
+    padding: 10px;
+    background: #182235;
+    border: none;
+    border-radius: 8px;
+    margin-top: 5px;
+    color: white;
+}
+
+.modal-actions {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
