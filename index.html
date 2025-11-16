@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EduVision - Learning Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <div class="app">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h2 class="logo">EduVision</h2>
+
+            <button class="btn" id="btnNewCourse">+ New Course</button>
+
+            <h3 class="section-title">Courses</h3>
+            <div id="coursesList" class="courses"></div>
+
+            <h3 class="section-title">Quick Stats</h3>
+            <div class="stats">
+                <div class="stat-card">
+                    <h4 id="statCourses">0</h4>
+                    <p>Courses Created</p>
+                </div>
+
+                <div class="stat-card">
+                    <h4 id="statLessons">0</h4>
+                    <p>Total Lessons</p>
+                </div>
+
+                <div class="stat-card">
+                    <h4 id="statCompleted">0</h4>
+                    <p>Lessons Completed</p>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main" id="mainContent">
+            <h1>Welcome to EduVision</h1>
+            <p>Select a course or create a new one to begin.</p>
+        </main>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal" id="courseModal">
+        <div class="modal-content">
+            <h2>New Course</h2>
+
+            <label>Course Title</label>
+            <input type="text" id="courseTitle">
+
+            <label>Category</label>
+            <input type="text" id="courseCategory">
+
+            <label>Description</label>
+            <textarea id="courseDescription"></textarea>
+
+            <div class="modal-actions">
+                <button id="saveCourse" class="btn">Save</button>
+                <button id="closeModal" class="btn-outline">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
