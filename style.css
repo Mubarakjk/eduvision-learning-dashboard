@@ -137,3 +137,68 @@ body {
     display: flex;
     justify-content: space-between;
 }
+
+.course-card.active {
+    outline: 2px solid #6ee7b7;
+}
+
+/* LESSONS */
+.main h1 {
+    margin-bottom: 8px;
+}
+
+.main h3 {
+    margin: 20px 0 10px;
+}
+
+.progress,
+.empty {
+    color: #9aa4b8;
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+.lesson {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.lesson.done span {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+.lesson-form {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+    max-width: 480px;
+}
+
+.lesson-form input {
+    flex: 1;
+    padding: 10px;
+    background: #182235;
+    border: none;
+    border-radius: 8px;
+    color: white;
+}
+
+.lesson-form .btn {
+    width: auto;
+    margin-bottom: 0;
+    padding: 10px 16px;
+}
+
+/* Stack the sidebar above the content on small screens */
+@media (max-width: 700px) {
+    .app {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+}
